@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.signup{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.signup-wrapper{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    width: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+}
+
+.signup-wrapper .title-signup{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.signup-wrapper input{
+    width: 100%;
+}
+
+.signup-wrapper p{
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #36454F;
+}
+
+.signup-wrapper .signup-btn{
+    width: 100%;
+    margin-top: 14px;
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+    border: 0;
+    font-weight: 600;
+    background-color: #007bff;
+}
+
+.signup-wrapper .signup-btn:hover{
+    background-color: rgba(0, 123, 255, 0.78);
+}
+
+.img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01465b;
+}
+
+.img img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+/*Stil za input*/
+
+.input-container {
+    position: relative;
+    margin: 12px;
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus + .input-label {
+    top: -11px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homePage i{
+    color: #007bff;
+}
+
+.homePage i:hover{
+    color: rgba(0, 123, 255, 0.78);
+}
